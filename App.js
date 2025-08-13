@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import maisOpcoes from './src/screens/maisOpcoes';
+import telaAcesso from './src/screens/telaAcesso';
 
 export default function App() {
   return (
