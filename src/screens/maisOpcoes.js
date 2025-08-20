@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View } from 'react-native';
 
 export default function maisOpcoes() {
+    const [isSelected, setSelection] = useState(false);
     return (
         <View>
             {/*Título e subtítulo*/}
@@ -13,32 +14,65 @@ export default function maisOpcoes() {
                     com E-mail e senha
                 </Text>
             </View>
+
             {/*Campos de input*/}
+            <View>
+
+            </View>
+
+            {/*Checkbox*/}
+            <View>
+                <View>
+                    <CheckBox>
+                        value={isSeleec}
+                    </CheckBox>
+
+                </View>
+                <View>
+                    <Text>Esqueci minha senha</Text>
+                </View>
+            </View>
 
             {/*Botões*/}
             <View>
-                <TouchableOpacity style={{backgroundColor: '#14c871', padding: 10}}>
-                        <View>
-                            <View>
-                                <Image
-                                    source={{ uri: 'assets\Google.png'}}
-                                    style={{width: 100, height: 100 }}
-                                />
-                            </View>
-                            <View>
-                                <Text style={{color: 'white'}}>Como deseja acessar?</Text>
-                            </View>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={{backgroundColor: '#ffffff', padding: 10}}
-                        onPress={() => }
-                    >
-                        <View>
-                            <Text style={{color: 'black'}}>Outras opções</Text>
-                        </View>
-                    </TouchableOpacity>
+                <TouchableOpacity style={ buttonVerde }>
+                    <View>
+                        <Text style={{color: 'white'}}>Acessar</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
+            <View>
+                <TouchableOpacity
+                        style={ styles.buttonBranco }
+                >
+                    <View>
+                        <Text style={{color: 'black'}}>Cadastrar</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
+
+
         </View>  
-    )
-}
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        paddingHorizontal: 10,
+    },
+    buttonBranco: {
+        backgroundColor: '#ffffff',
+        padding: 10,
+        borderRadius: 5,
+        borderWidth: 5,
+        borderColor: '#14c871',
+
+    },
+    buttonVerde: {
+        backgroundColor: '#14c871',
+        padding: 10,
+        borderRadius: 5,
+    }
+});

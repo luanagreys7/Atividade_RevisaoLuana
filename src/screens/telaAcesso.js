@@ -3,7 +3,8 @@ import { Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function telaAcesso() {
     return(
-        <View style={{backgroundColor: #f6f6f6}}>
+        <View style={{backgroundColor: '#f6f6f6'}}>
+            {/* Imagem*/}
             <View>
                 <Image
                     source={{uri: 'assets\casual_dog.png'}}
@@ -22,7 +23,7 @@ export default function telaAcesso() {
             </View>
             {/*Botões*/}
                 <TouchableOpacity
-                    style={{backgroundColor: '#14c871', padding: 10}}
+                    style={ styles.buttonVerde }
                 >
                     <View>
                         <View>
@@ -36,14 +37,37 @@ export default function telaAcesso() {
                         </View>
                     </View>
                 </TouchableOpacity>
+
                 <TouchableOpacity
-                    style={{backgroundColor: '#ffffff', padding: 10}}
-                    onPress={() => }
+                    style={ buttonBranco }
+
+                    onPress={() => navigation.navigate('Opções')}
                 >
                     <View>
                         <Text style={{color: 'black'}}>Outras opções</Text>
                     </View>
                 </TouchableOpacity>
         </View>
-    )
+    );
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        paddingHorizontal: 10,
+    },
+    buttonBranco: {
+        backgroundColor: '#ffffff',
+        padding: 10,
+        borderRadius: 5,
+        borderWidth: 5,
+        borderColor: '#14c871',
+
+    },
+    buttonVerde: {
+        backgroundColor: '#14c871',
+        padding: 10,
+        borderRadius: 5,
+    }
+});
