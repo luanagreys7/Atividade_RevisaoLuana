@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function maisOpcoes() {
+export default function MaisOpcoes({ navigation }) {
     const [isSelected, setSelection] = useState(false);
-    const PasswordInput = ({ placeholder, value, onChangeText }) => {
+    const PasswordInput = ({ value, onChangeText }) => {
         const [showPassword, setShowPassword] = useState(false);
        
         const togglePasswordVisibility = () => {
@@ -14,10 +14,10 @@ export default function maisOpcoes() {
         <View>
             {/*Título e subtítulo*/}
             
-                <Text style={{fontSize: 20}}>
+                <Text style={{fontSize: 40}}>
                     Acesse
                 </Text>
-                <Text style={{ fontSize: 20}}>
+                <Text style={{ fontWeight: "bold"}}>
                     com E-mail e senha
                 </Text>
 
@@ -68,10 +68,6 @@ export default function maisOpcoes() {
                     <Text style={{color: 'black'}}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
-
-
-
-
 
         </View>  
     );
