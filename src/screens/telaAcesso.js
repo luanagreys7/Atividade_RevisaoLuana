@@ -9,7 +9,7 @@ export default function TelaAcesso({navigation}) {
             {/* Imagem*/}
             <Image
                 source={{uri: 'assets/casual_dog.png'}}
-                style={{width: 100, height: 100}}
+                style={{width: windowWidth * 0.7 }}
             />
             
             {/*Título e subtítulo*/}
