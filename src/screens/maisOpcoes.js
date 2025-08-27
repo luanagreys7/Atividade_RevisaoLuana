@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function MaisOpcoes({ navigation }) {
+export default function MaisOpcoes() {
     const [isSelected, setSelection] = useState(false);
     const PasswordInput = ({ value, onChangeText }) => {
         const [showPassword, setShowPassword] = useState(false);
