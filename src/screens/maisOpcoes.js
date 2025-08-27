@@ -61,7 +61,7 @@ export default function maisOpcoes() {
 
             {/*Botões*/}
             <View>
-                <TouchableOpacity style={ buttonVerde }> 
+                <TouchableOpacity style={ styles.buttonVerde }> 
                     <Text style={{color: 'white'}}>Acessar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={ styles.buttonBranco }>

@@ -40,7 +40,7 @@ export default function telaAcesso() {
                     </TouchableOpacity>
 
                 <TouchableOpacity
-                    style={ buttonBranco }
+                    style={ styles.buttonBranco }
 
                     onPress={() => navigation.navigate('Opções')}
                 >
