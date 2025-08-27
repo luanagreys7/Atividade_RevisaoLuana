@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import maisOpcoes from './src/screens/maisOpcoes';
 import telaAcesso from './src/screens/telaAcesso';
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
