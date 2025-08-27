@@ -13,10 +13,10 @@ export default function TelaAcesso({navigation}) {
             />
             
             {/*Título e subtítulo*/}
-            <Text style={{fontSize: 40, fontWeight: bold}}>
+            <Text style={{fontSize: 40, fontWeight: 'bold'}}>
                 Ótimo dia!
             </Text>
-            <Text style={{ fontWeight: "bold"}}>
+            <Text style={{ fontWeight: 'bold'}}>
                 Como deseja acessar?
             </Text>
 

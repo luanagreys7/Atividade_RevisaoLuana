@@ -17,7 +17,7 @@ export default function MaisOpcoes({ navigation }) {
                 <Text style={{fontSize: 40}}>
                     Acesse
                 </Text>
-                <Text style={{ fontWeight: "bold"}}>
+                <Text style={{ fontWeight: 'bold'}}>
                     com E-mail e senha
                 </Text>
 
