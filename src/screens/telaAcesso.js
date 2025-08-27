@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import { Text, View, Image, TouchableOpacity, StyleSheet } from "react-native";
+
 
 export default function telaAcesso() {
     return(

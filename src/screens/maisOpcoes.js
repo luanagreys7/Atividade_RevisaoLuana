@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function maisOpcoes() {
     const [isSelected, setSelection] = useState(false);
@@ -69,7 +69,7 @@ export default function maisOpcoes() {
                 </TouchableOpacity>
             </View>
 
-            
+
 
 
 
